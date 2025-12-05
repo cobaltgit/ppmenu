@@ -2,7 +2,7 @@
 
 Power profile picker for window managers using D-Bus!
 
-<img src="./assets/demo.gif" alt="Demonstration of ppp" width="800">
+<img src="./assets/demo.gif" alt="Demonstration of ppp" width="720">
 
 ## Supported launchers
 
