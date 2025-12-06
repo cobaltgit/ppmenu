@@ -12,6 +12,7 @@ Power profile picker for window managers using D-Bus!
 * [`tofi`](https://github.com/philj56/tofi)
 * [`wofi`](https://github.com/SimplyCEO/wofi)
 * [`fuzzel`](https://codeberg.org/dnkl/fuzzel)
+* [`walker`](https://github.com/abenz1267/walker)
 
 ## Requirements
 

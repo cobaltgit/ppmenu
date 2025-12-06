@@ -12,7 +12,7 @@ use powerprofile::PowerProfile;
 #[derive(FromArgs)]
 /// Power profile selector for power-profiles-daemon (or tlp-pd) using a dmenu-compatible launcher
 struct PPPArgs {
-    /// launcher to use (supported launchers are fuzzel, dmenu, bemenu, rofi, wofi, tofi)
+    /// launcher to use (supported launchers are fuzzel, rofi, walker, dmenu, bemenu, wofi, tofi)
     #[argh(option, short = 'l')]
     launcher: String,
 
@@ -30,6 +30,7 @@ fn main() -> Result<()> {
     let menus: Vec<Menu> = vec![
         Menu { name: String::from("fuzzel"), args: format!("--dmenu --index --placeholder \"{}\"", placeholder), use_index: true },
         Menu { name: String::from("rofi"), args: format!("-dmenu -i -p \"{}\"", placeholder), use_index: true },
+        Menu { name: String::from("walker"), args: format!("-d -i -p \"{}\"", placeholder), use_index: true },
         Menu { name: String::from("dmenu"), args: format!("-p \"{}\"", placeholder), use_index: false },
         Menu { name: String::from("bemenu"), args: format!("-p \"{}\"", placeholder), use_index: false },
         Menu { name: String::from("wofi"), args: format!("--show=dmenu -p \"{}\"", placeholder), use_index: false },
